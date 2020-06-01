@@ -9,6 +9,6 @@ async function bootstrap() {
     logger: false,
   });
   app.useLogger(logger);
-  await app.listen(3000);
+  await app.listen(3000, () => console.log('YOU WONT SEE ME'));
 }
 bootstrap();
